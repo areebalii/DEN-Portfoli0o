@@ -1,6 +1,9 @@
 const downloadCv = document.querySelector('.download');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
+const menuToggle = document.querySelector('.menu-toggle');
+const homeSocialIcons = document.querySelector('.home-content .social-icons');
+
 
 // event listener download button
 downloadCv.addEventListener('click', () => {
@@ -31,3 +34,15 @@ window.addEventListener('scroll', function () {
   });
 });
 
+// toggle menu functionality
+menuToggle.addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
+// when click on any link the menu will close
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
