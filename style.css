@@ -794,6 +794,9 @@ nav li {
     align-items: center;
     justify-content: center;
   }
+  .contact-title{
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 578px) {
