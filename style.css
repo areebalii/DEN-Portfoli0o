@@ -738,7 +738,7 @@ nav li {
     flex-direction: column;
     align-items: center;
   }
-  .about-img img {
+  .about-img {
     display: none;
   }
 }
