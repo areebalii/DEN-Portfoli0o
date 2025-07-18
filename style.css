@@ -10,6 +10,10 @@ html {
   scroll-padding-top: 100px;
   overflow-x: hidden;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
@@ -717,30 +721,40 @@ nav li {
 @media (max-width: 686px) {
   nav ul {
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 0;
     top: 100px;
     background-color: #1f1e50;
     max-height: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     opacity: 0;
+    width: 100vw;
+    max-width: 100%;
     transition: max-height 0.4s ease, opacity 0.4s ease;
   }
+
   nav ul.open {
-    max-height: 100vh;
+    max-height: 70vh;
     opacity: 1;
   }
   nav ul li {
     padding: 20px 0;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  nav ul li:hover {
+    background-color: #0077b5;
+    padding: 20px;
+    border-radius: 10px;
   }
   .menu-toggle {
     display: block;
     transition: all 0.3s ease;
   }
-  #home h1 {
-    font-size: 40px;
+  #home, #services h1 {
+    font-size: 35px;
   }
   #home .img img {
     width: 200px;
@@ -762,12 +776,19 @@ nav li {
     height: 100vh;
     transition: all 0.3s ease;
   }
+  .section-header h2{
+    font-size: 35px;
+  }
+  .section-header p{
+    margin-bottom: 20px;
+  }
   #projects .project-card {
-    width: 100%;
-    max-width: 350px;
+    /* width: 100%; */
+    max-width: 300px;
     margin: 0 auto;
   }
-   .contact-content {
+
+  .contact-content {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -776,22 +797,22 @@ nav li {
 }
 
 @media (max-width: 578px) {
- header{
-  width: 100%;
- }
-  #home h1{
+  header {
+    width: 100%;
+  }
+  #home h1 {
     font-size: 35px;
   }
-  #about h1{
+  #about h1 {
     font-size: 35px;
   }
-  #about h2{
+  #about h2 {
     font-size: 30px;
   }
-  #home p{
+  #home p {
     font-size: 25px;
   }
-  #about{
+  #about {
     padding: 0 20px;
   }
 }
