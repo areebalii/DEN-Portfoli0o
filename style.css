@@ -776,6 +776,21 @@ nav li {
 }
 
 @media (max-width: 578px) {
+ header{
+  width: 100%;
+ }
+  #home h1{
+    font-size: 35px;
+  }
+  #about h1{
+    font-size: 35px;
+  }
+  #about h2{
+    font-size: 30px;
+  }
+  #home p{
+    font-size: 25px;
+  }
   #about{
     padding: 0 20px;
   }
