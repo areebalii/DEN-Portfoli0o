@@ -695,6 +695,29 @@ nav li {
 .mobile-social-icons {
   display: none;
 }
+.sm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+footer{
+  background-color: #1f1e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -3px 10px rgba(0, 166, 255, 0.2);
+}
+footer p {
+  margin: 0;
+  font-size: 18px;
+  color: #ccc;
+}
 
 /* Responsive design */
 @media (max-width: 902px) {
@@ -848,5 +871,8 @@ nav li {
   }
   #about {
     padding: 0 20px;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
