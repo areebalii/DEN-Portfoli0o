@@ -4,6 +4,8 @@ const downloadCv = document.querySelector('.download');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
 
+
+
 // Hamburger icon toggle
 toggleBtn.addEventListener("click", () => {
   navMenu.classList.toggle("open");
