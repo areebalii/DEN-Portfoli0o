@@ -3,7 +3,15 @@ const navMenu = document.querySelector("nav ul");
 const downloadCv = document.querySelector('.download');
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('section');
+const loader = document.querySelector('.loader');
 
+
+// loader
+window.addEventListener('load', () => {
+  setInterval(() => {
+    loader.style.display = 'none';
+  }, 2000);
+});
 
 
 // Hamburger icon toggle

@@ -366,31 +366,11 @@
     </footer>
 
 
-<script src="script.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  // Add loading class to body initially
-  document.body.classList.add('loading');
-  
-  // Initialize AOS but disable it initially
-  AOS.init({
-    disable: true
-  });
-  
-  window.addEventListener('load', function() {
-    // Hide loader after a short delay (you can adjust the 1000ms to whatever you prefer)
-    setTimeout(function() {
-      document.querySelector('.loader').style.opacity = '0';
-      
-      // After fade out completes, remove loader and enable animations
-      setTimeout(function() {
-        document.querySelector('.loader').style.display = 'none';
-        document.body.classList.remove('loading');
-        AOS.refresh(); // Refresh AOS to trigger animations
-      }, 1000); 
-    }, 2000);
-  });
-</script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 
